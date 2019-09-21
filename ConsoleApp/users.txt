@@ -1,2 +1,2 @@
-un.login
-pw.password
+user
+password

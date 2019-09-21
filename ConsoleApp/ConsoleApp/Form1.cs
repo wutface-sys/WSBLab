@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace ConsoleApp
 {
     public partial class Form1 : Form
     {
+        static readonly string rootFolder = @"C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp";
+        static readonly string textFile = @"C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\users.txt";
         public Form1()
         {
             InitializeComponent();
@@ -32,20 +35,26 @@ namespace ConsoleApp
         {
             string username = UNtext.Text;
             string password = PWtext.Text;
+            StreamReader ab = new StreamReader(@"C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\users.txt");
+            string line1 = ab.ReadLine();
+            string line2 = ab.ReadLine();
 
-            if (username == "user" && password == "password")
-            {
-                var frm = new Library();
-                frm.Location = this.Location;
-                frm.StartPosition = FormStartPosition.Manual;
-                frm.FormClosing += delegate { this.Show(); };
-                frm.Show();
-                this.Hide();
-            }
-            else
-            {
-                errorLabel.Text = "Blad logowania";
-            }
+                if (username == line1 && password == line2)
+                {
+                    var frm = new Library();
+                    frm.Location = this.Location;
+                    frm.StartPosition = FormStartPosition.Manual;
+                    frm.FormClosing += delegate { this.Show(); };
+                    frm.Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    errorLabel.Text = "Blad logowania";
+
+                }
+
         }
     }
 }

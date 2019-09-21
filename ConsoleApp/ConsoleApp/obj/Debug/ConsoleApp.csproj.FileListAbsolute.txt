@@ -7,3 +7,4 @@ C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\ConsoleApp\obj\Debug\Consol
 C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.exe
 C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.Library.resources

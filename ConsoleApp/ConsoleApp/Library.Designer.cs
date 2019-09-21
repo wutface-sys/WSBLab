@@ -31,6 +31,8 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.bookLbl = new System.Windows.Forms.Label();
             this.bookText = new System.Windows.Forms.TextBox();
+            this.chkBtn = new System.Windows.Forms.Button();
+            this.chkLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -60,11 +62,31 @@
             this.bookText.Size = new System.Drawing.Size(166, 20);
             this.bookText.TabIndex = 2;
             // 
+            // chkBtn
+            // 
+            this.chkBtn.Location = new System.Drawing.Point(434, 93);
+            this.chkBtn.Name = "chkBtn";
+            this.chkBtn.Size = new System.Drawing.Size(138, 20);
+            this.chkBtn.TabIndex = 3;
+            this.chkBtn.Text = "Sprawdz liste";
+            this.chkBtn.UseVisualStyleBackColor = true;
+            this.chkBtn.Click += new System.EventHandler(this.chkBtn_Click);
+            // 
+            // chkLbl
+            // 
+            this.chkLbl.AutoSize = true;
+            this.chkLbl.Location = new System.Drawing.Point(593, 96);
+            this.chkLbl.Name = "chkLbl";
+            this.chkLbl.Size = new System.Drawing.Size(0, 13);
+            this.chkLbl.TabIndex = 4;
+            // 
             // Library
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chkLbl);
+            this.Controls.Add(this.chkBtn);
             this.Controls.Add(this.bookText);
             this.Controls.Add(this.bookLbl);
             this.Controls.Add(this.titleLabel);
@@ -80,5 +102,7 @@
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label bookLbl;
         private System.Windows.Forms.TextBox bookText;
+        private System.Windows.Forms.Button chkBtn;
+        private System.Windows.Forms.Label chkLbl;
     }
 }

@@ -13,8 +13,6 @@ namespace ConsoleApp
 {
     public partial class Form1 : Form
     {
-        static readonly string rootFolder = @"C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp";
-        static readonly string textFile = @"C:\Users\studentwsb\Documents\Nowy folder\ConsoleApp\users.txt";
         public Form1()
         {
             InitializeComponent();
